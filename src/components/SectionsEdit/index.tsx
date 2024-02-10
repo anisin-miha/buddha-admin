@@ -1,18 +1,18 @@
 import {
-  Create,
+  Edit,
   SimpleForm,
   TextInput,
   SelectInput,
   BooleanInput,
 } from "react-admin";
 
-export const SectionsCreate: React.FC = () => {
+export const SectionsEdit: React.FC = (props) => {
   return (
-    <Create>
+    <Edit {...props}>
       <SimpleForm>
+        <TextInput disabled source="id" />
         <TextInput source="name" label="Name" />
         <SelectInput
-          defaultValue={"food"}
           source="type"
           label="Type"
           choices={[
@@ -22,6 +22,6 @@ export const SectionsCreate: React.FC = () => {
         />
         <BooleanInput source="hidden" label="Hidden" />
       </SimpleForm>
-    </Create>
+    </Edit>
   );
 };

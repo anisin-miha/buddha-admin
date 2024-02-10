@@ -1,10 +1,9 @@
 import { List, Datagrid, TextField, CreateButton } from "react-admin";
 
-export const CategoriesList = (props) => {
+export const CategoriesList = () => {
   return (
-    <List {...props}>
+    <List>
       <Datagrid>
-        <TextField source="id" />
         <TextField source="name" />
         <TextField source="sectionId" label="sectionId" />
       </Datagrid>

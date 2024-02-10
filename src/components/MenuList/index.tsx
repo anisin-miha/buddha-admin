@@ -99,8 +99,6 @@ const MenuList: React.FC = (props) => {
         <TextField source="dish" />
         <TextField source="price" />
         <TextField source="category" />
-        <TextField source="categoryId" label="categoryId" />
-
         <EditButton />
         <DeleteButton />
       </Datagrid>

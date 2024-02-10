@@ -1,12 +1,22 @@
-import { List, Datagrid, TextField, CreateButton } from "react-admin";
+import {
+  List,
+  Datagrid,
+  TextField,
+  EditButton,
+  CreateButton,
+  BooleanField,
+} from "react-admin";
 
-export const SectionsList = (props) => {
+export const SectionsList = () => {
   return (
-    <List {...props}>
+    <List>
       <Datagrid>
-        <TextField source="id" />
+        {/* <TextField source="id" /> */}
         <TextField source="name" />
-        {/* <TextField source="categories" /> */}
+        <TextField source="type" />
+        <TextField source="createdby" />
+        <BooleanField source="hidden" label="Hidden" />
+        <EditButton />
       </Datagrid>
       <CreateButton />
     </List>

@@ -8,6 +8,7 @@ import MenuCreate from "./components/MenuCreate";
 import { CategoriesList } from "./components/CategoriesList";
 import { SectionsCreate } from "./components/SectionCreate";
 import { CategoriesCreate } from "./components/CategoriesCreate";
+import { SectionsEdit } from "./components/SectionsEdit";
 
 export const App: React.FC = () => {
   return (
@@ -27,7 +28,8 @@ export const App: React.FC = () => {
         name="sections"
         list={SectionsList}
         create={SectionsCreate}
-        edit={MenuEdit}
+        edit={SectionsEdit}
+        // edit={MenuEdit}
       />
       <Resource
         name="categories"
